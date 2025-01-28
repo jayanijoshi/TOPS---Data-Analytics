@@ -25,41 +25,41 @@
 
 -- A : Write an SQL query to print all Worker details from the Worker table order by FIRST_NAME Ascending and DEPARTMENT Descending -- 
         
-			/* Using Order By Clause */
-        select * from assessment_1_Q1 order by first_name;  -- Sorting worker details by first_name ascending --
+		/* Using "Order By" Clause */
+        	select * from assessment_1_Q1 order by first_name;  -- Sorting worker details by first_name ascending --
 		select * from assessment_1_Q1 order by department desc;  -- Sorting worker details by department descending --
 		
 -- B : Write an SQL query to print details for Workers with the first names “Vipul” and “Satish” from the Worker table.--
 			
-            /* Using IN Clause */
-        select * from assessment_1_Q1 where first_name in ('Vipul', 'Satish');
+            	/* Using "IN" Clause */
+        	select * from assessment_1_Q1 where first_name in ('Vipul', 'Satish');
         
 -- C : Write an SQL query to print details of the Workers whose FIRST_NAME ends with ‘h’ and contains six alphabets. --
-		   /* Using " %_% " filter */
+		/* Using " _ " filter */
 		select * from assessment_1_Q1 where first_name like '_____h';
         
 -- D : Write an SQL query to print details of the Workers whose SALARY lies between 50000 to 250000. --
-		   /* Using "AND" clause */
+		/* Using "AND" clause */
 		select * from assessment_1_Q1 where salary>=50000 and salary<=250000;
 		
 -- E : Write an SQL query to fetch duplicate records having matching data in some fields of a table. --
-		   /* Using "GROUP BY" and "HAVING" */
-select worker_id,first_name,last_name,salary,joining_date,department, COUNT(*) as duplicates from assessment_1_q1 group by worker_id,first_name,last_name,salary,joining_date,department having COUNT(*) > 1;
+		/* Using "GROUP BY" , "COUNT" and "HAVING" */
+		select worker_id,first_name,last_name,salary,joining_date,department, COUNT(*) as duplicates from assessment_1_q1 group by worker_id,first_name,last_name,salary,joining_date,department having COUNT(*) > 1;
         
 -- F : Write an SQL query to show the top 6 records of a table. --
-		   /* Using "limit" clause */
+		/* Using "limit" clause */
 		select * from assessment_1_Q1 limit 6;
         
 -- G : Write an SQL query to fetch the departments that have less than five people in them. --
-		   /* Using "GORUP BY" , "COUNT" & "HAVING" clause */
+		/* Using "GORUP BY" , "COUNT" & "HAVING" clause */
 		select department from assessment_1_Q1 group by department having count(*) < 5;
         
 -- H : Write an SQL query to show all departments along with the number of people in there. --
-		   /* Using "GORUP BY" , "COUNT" & "HAVING" clause */
+		/* Using "GORUP BY" & "COUNT" clause */
 		select department, count(*) as Total_staff from assessment_1_q1 group by department;
 
 -- I : Write an SQL query to print the name of employees having the highest salary in each department. --
-		   /* Using "GORUP BY" & "HAVING" clause */
+		/* Using "GORUP BY" , "MAX" & "HAVING" clause */
 		select department,max(salary) from assessment_1_q1 group by department having max(salary);
 
         
@@ -100,15 +100,16 @@ select worker_id,first_name,last_name,salary,joining_date,department, COUNT(*) a
     
     
 		-- A : To display all the records form STUDENT table. --
-    select * from assessment_1_q2;    
+    	select * from assessment_1_q2;    
 	
 		-- B : To display any name and date of birth from the table STUDENT. --
 	select std_name,DOB from assessment_1_q2;
 	select std_name,DOB from assessment_1_q2 where std_name='Jahnavi Puri';  -- Displaying any random name with details --    
+
 		-- C : To display all students record where percentage is greater or equal to 80 FROM student table. --
-    select * from assessment_1_q2 where percentage>=80;
+	select * from assessment_1_q2 where percentage>=80;
     
-        -- D : To display student name, stream and percentage where percentage of student is more than 80 --
+        	-- D : To display student name, stream and percentage where percentage of student is more than 80 --
 	select std_name,stream,percentage from assessment_1_q2 where percentage>80;
         
 		-- E : To display all records of science students whose percentage is more than 75 from student table. --
