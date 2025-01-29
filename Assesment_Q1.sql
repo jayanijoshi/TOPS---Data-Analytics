@@ -11,7 +11,7 @@
     
     
     select * from assessment_1_Q1;
-    insert into assessment_1_Q1 values (1, 'Monika', 'Arora', 100000, '2/20/2014 09:00', 'HR');
+    	insert into assessment_1_Q1 values (1, 'Monika', 'Arora', 100000, '2/20/2014 09:00', 'HR');
 	insert into assessment_1_Q1 values (2, 'Niharika', 'Verma', 80000, '6/11/2014 09:00', 'Admin');
 	insert into assessment_1_Q1 values (3, 'Vishal', 'Singhal', 300000, '2/20/2014 09:00', 'HR');
 	insert into assessment_1_Q1 values (4, 'Amitabh', 'Singh', 500000, '2/20/2014 09:00', 'Admin');
