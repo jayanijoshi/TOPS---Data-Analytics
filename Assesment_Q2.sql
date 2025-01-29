@@ -34,15 +34,16 @@
     
     
 		-- A : To display all the records form STUDENT table. --
-    select * from assessment_1_q2;    
+    	select * from assessment_1_q2;    
 	
 		-- B : To display any name and date of birth from the table STUDENT. --
 	select std_name,DOB from assessment_1_q2;
 	select std_name,DOB from assessment_1_q2 where std_name='Jahnavi Puri';  -- Displaying any random name with details --    
+
 		-- C : To display all students record where percentage is greater or equal to 80 FROM student table. --
-    select * from assessment_1_q2 where percentage>=80;
+    	select * from assessment_1_q2 where percentage>=80;
     
-        -- D : To display student name, stream and percentage where percentage of student is more than 80 --
+        	-- D : To display student name, stream and percentage where percentage of student is more than 80 --
 	select std_name,stream,percentage from assessment_1_q2 where percentage>80;
         
 		-- E : To display all records of science students whose percentage is more than 75 from student table. --
