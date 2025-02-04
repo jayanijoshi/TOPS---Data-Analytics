@@ -155,7 +155,7 @@ WHERE co.Company_Name = 'Murcate Pvt Ltd';
   
     -- 3. Statement to create the ContactEmployee table --
     
-    /*
+    	/*
 		The query to create contactemployee table -:
     
 		create table ContactEmployee
@@ -167,19 +167,19 @@ WHERE co.Company_Name = 'Murcate Pvt Ltd';
 		Contact_Date date,
 		Description varchar(100)
 		);
-    */
+    	*/
   
   
     -- 4. In the Employee table, the statement that changes Param Shah's phone number to 9684235589 --
     
-    /* 
+    	/* 
 		The statement to change the phone number of Param Shah -:
 		update employee set phone = '9684235589' where employee_id = 33; 
-    */
+    	*/
     
 	-- 5. In the Company table, the statement that changes the name of “Urban Outfitters, Inc.” to “Urban Outfitters™ . --
     
-    /* 
+    	/* 
 		This Statement to update the Company Name is -:
 		update company set Company_Name = 'Murcate Pvt Ltd' ; 
 	*/
