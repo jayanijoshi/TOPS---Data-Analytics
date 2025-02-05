@@ -220,7 +220,7 @@ WHERE co.Company_Name = 'Murcate Pvt Ltd';
     -- 10. What does a join in MySQL mean? --
     
     /*
-    "JOIN" 
+    "JOIN" is clause of MySQL which is used we want to display multiple columns from different tables together in one output.
     */
     -- 11. What do you understand about DDL, DCL, and DML in MySQL? --
 
