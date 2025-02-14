@@ -187,13 +187,13 @@ WHERE co.Company_Name = 'Murcate Pvt Ltd';
     -- 6. In ContactEmployee table, the statement that removes Dianne Connor’s contact event with Jack Lee (one statement). (HINT: Use the primary key of the ContactEmployee table to specify the correct record to remove.) --
     
     /*
-						TOPICS YET TO BE TAUGHT  
+						 
     */
     
     -- 7. Write the SQL SELECT query that displays the names of the employees that have contacted Toll Brothers (one statement). Run the SQL SELECT query in MySQL Workbench. Copy the results below as well. -- 
     
     /*
-						TOPICS YET TO BE TAUGHT
+						
     */
     
     -- 8. What is the significance of “%” and “_” operators in the LIKE statement? --
@@ -214,7 +214,24 @@ WHERE co.Company_Name = 'Murcate Pvt Ltd';
     -- 9. Explain normalization in the context of databases. --
 
     /*
-						TOPICS YET TO BE TAUGHT
+		"Normalization" is a process in which the messed up or unscrapped data is organized and converted into the scrapped data in such a way that 
+	         the data is easily readable and can be used by client without any complexities. The basic pipeline of normalization forms is fixed and is :
+		
+		 Pipleine :- Data - 1NF - 2NF - 3NF - BCNF(optional)
+
+		There are 3 Common types of Normalization used in Data World :-
+
+		1 NF : 1st Normalization form segregates and displays the duplicate values in the table in seperate rows
+
+		2 NF : 2nd Normalization form mean the table is already in 1NF and after passing from 1NF and data is properly arranged. Now the Two tables 
+		       are created for two different coulmns and then tables are joined using JOIN and are assigned PRIMARY/Foreign Key.
+		       Here the Dependent columns are made independent.
+
+		3 NF : After successfully processing through the 1NF and 2NF, the data is now passes through 3NF where all the columns in a table are made 
+		       totally dependent on the Primary Key only.
+
+		BC NF : BC NF stands for Boyce-Codd Normalization Form. This is the 3NF only, but a more stricter and more disciplined form.
+
     */
     
     -- 10. What does a join in MySQL mean? --
