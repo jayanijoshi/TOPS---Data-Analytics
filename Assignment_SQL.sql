@@ -19,7 +19,11 @@ ZIP varchar(25) not null
 describe Company;
 
 insert into company values
-(144, 'Market-Co', 'MG Road', 'Bangalore', 'Karnataka', '560001');
+(144, 'Market-Co', 'MG Road', 'Bangalore', 'Karnataka', '560001'),
+(147, 'Toll-Brothers', 'Vashi', 'Mumbai', 'Maharashtra', '400703'),
+(148, 'Purtunes', 'Dindoli', 'Surat', 'Gujarat', '394210'),
+(151, 'Lambonic Pvt. Ltd.', 'Baner', 'Pune', 'Maharashtra', '411045'),
+(155, 'DiaTaire Jewels', 'CG Road', 'Ahmedabad', 'GUjarat', '380009');
 
 select * from company;
 
@@ -187,13 +191,17 @@ WHERE co.Company_Name = 'Murcate Pvt Ltd';
     -- 6. In ContactEmployee table, the statement that removes Dianne Connor’s contact event with Jack Lee (one statement). (HINT: Use the primary key of the ContactEmployee table to specify the correct record to remove.) --
     
     /*
-						 
+	delete from ContactEmployee where contact_employeeid = (select employee_id from employee where first_name = 'Param' and last_name = 'Shah' ) and 
+	employee_id = (select employee_id from employee where first_name = 'Sakshi' and last_name = 'Patel');					 
     */
     
     -- 7. Write the SQL SELECT query that displays the names of the employees that have contacted Toll Brothers (one statement). Run the SQL SELECT query in MySQL Workbench. Copy the results below as well. -- 
     
     /*
-						
+	select e.first_name,e.last_name from contact e join company c on e.company_id = c.company_id where company_Name = 'Toll-Brothers';
+
+	select e.* from contact e join company c on e.Company_id = c.Company_ID where company_name = 'Toll-Brothers';  -- Displays all details of the employee working for Toll-Brothers --
+			
     */
     
     -- 8. What is the significance of “%” and “_” operators in the LIKE statement? --
