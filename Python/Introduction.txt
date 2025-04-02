@@ -1,0 +1,2 @@
+This is the directory for all the Python scripts.
+Submissions of TOPS Assignments for Data Analytics Course.
